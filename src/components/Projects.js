@@ -1,4 +1,5 @@
 import React from "react";
+import Project from "./Project";
 
 const Projects = () => {
   return (
@@ -7,6 +8,11 @@ const Projects = () => {
         <h1 className="page-heading" lang="fi">
           Projektit
         </h1>
+        <div className="page-content">
+          <Project name="Eveloper" />
+          <Project name="E-Kirjasto" />
+          <Project name="Joku" />
+        </div>
       </div>
     </div>
   );
