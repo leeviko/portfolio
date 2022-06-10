@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Hind Madurai";
+  src: url("./assets/fonts/HindMadurai-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Hind Madurai";
+  src: url("./assets/fonts/HindMadurai-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+body {
+  font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
+  background-color: rgba(23, 27, 39, 0.95);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0 0 0;
+}
+
+/* GLOBAL */
+p {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: "Poppins";
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav .nav-items {
+  display: flex;
+}
+
+/* Nav item */
+nav .nav-item-link {
+  text-align: center;
+  margin: 1rem 2.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Poppins";
+  color: var(--white);
+}
+
+/* Nav link line animation */
+.nav-item .line {
+  width: 75%;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+
+.nav-item.not-hover .line {
+  height: 0;
+}
+
+.nav-item.hover .line,
+.nav-item.active .line {
+  height: 4px;
+  background-color: var(--white);
+}
+
+/* PAGES */
+.page {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.page-heading {
+  letter-spacing: 1px;
+  margin: 0 0 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* HOME PAGE */
+
+.some-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.some-btn {
+  border: none;
+  background: none;
+  margin-left: 0.25rem;
+}
+
+.some-btn:first-child {
+  margin-left: 0;
+}
+
+.some-btn img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.75;
+  filter: invert(94%) sepia(8%) saturate(144%) hue-rotate(169deg) brightness(99%) contrast(87%);
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.some-btn:hover img {
+  opacity: 1;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 1.5rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
