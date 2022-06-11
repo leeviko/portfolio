@@ -10,6 +10,8 @@
   --black-main: #222632;
 
   --blue: #335acf;
+
+  --light-green: #0e551e;
 }
 
 @font-face {
@@ -53,7 +55,8 @@ body {
 }
 
 /* GLOBAL */
-p {
+p,
+span {
   font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
@@ -78,6 +81,7 @@ h5,
 h6,
 .heading {
   font-family: "Poppins";
+  font-weight: normal;
 }
 
 /* CONTAINER */
@@ -144,10 +148,14 @@ nav .nav-item-link {
 
 .page-heading {
   letter-spacing: 1px;
-  margin: 0 0 0.5rem 0.5rem;
+  margin: 0 0 0 0.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.section-text {
+  margin: 1rem 0;
 }
 
 /* HOME PAGE */
@@ -157,8 +165,40 @@ nav .nav-item-link {
 
 /* ABOUT PAGE */
 
-.about p {
-  font-size: 1rem;
+/* SKILLS PAGE */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-section-title {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Skill item */
+.skill {
+  margin: 0rem 1rem 0.5rem 0;
+  width: 7rem;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  border-radius: 3px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.progress-bar .progress {
+  border-radius: 3px;
+
+  height: 5px;
+  position: relative;
+}
+.progress.green {
+  background-color: var(--light-green);
 }
 
 /* PROJECTS PAGE */

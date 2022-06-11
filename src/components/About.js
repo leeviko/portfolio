@@ -8,7 +8,7 @@ const About = () => {
           Minusta
         </h1>
         <div className="page-content">
-          <p className="about-section-text" lang="fi">
+          <p className="about-section-text section-text" lang="fi">
             Morjes, oon Leevi. Opiskelen Kaukovainion OSAO:ssa ohjelmistokehittäjäksi. Tavoitteenani
             on kehittyä ohjelmoijana ja oppia uusia asioita. Vapaa-aikana tykkään koodata, pelata ja
             käydä juoksemassa, sekä välillä myös lukea.
