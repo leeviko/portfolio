@@ -9,9 +9,9 @@ const About = () => {
         </h1>
         <div className="page-content">
           <p className="about-section-text section-text" lang="fi">
-            Morjes, oon Leevi. Opiskelen Kaukovainion OSAO:ssa ohjelmistokehittäjäksi. Tavoitteenani
-            on kehittyä ohjelmoijana ja oppia uusia asioita. Vapaa-aikana tykkään koodata, pelata ja
-            käydä juoksemassa, sekä välillä myös lukea.
+            Morjes, oon Leevi. Opiskelen OSAOn Kaukovainion yksikössä ohjelmistokehittäjäksi.
+            Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita. Vapaa-aikana tykkään
+            koodata, pelata ja käydä juoksemassa, sekä välillä myös lukea.
           </p>
         </div>
       </div>
