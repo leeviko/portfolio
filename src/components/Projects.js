@@ -9,9 +9,14 @@ const Projects = () => {
           Projektit
         </h1>
         <div className="page-content">
-          <Project name="Eveloper" />
-          <Project name="E-Kirjasto" />
-          <Project name="Joku" />
+          <div className="projects-list">
+            <Project name="Eveloper" description="Full Stack Dev.to klooni (Kesken vielä)" />
+            <Project
+              name="E-Kirjasto"
+              description="E-kirjastossa käyttäjä voi lainata, etsiä ja palauttaa kirjoja. Admin voi lisätä ja päivittää kirjoja yms."
+            />
+            <Project name="Joku" />
+          </div>
         </div>
       </div>
     </div>

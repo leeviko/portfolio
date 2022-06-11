@@ -6,6 +6,10 @@
 
 :root {
   --white: #ffffff;
+
+  --black-main: #222632;
+
+  --blue: #335acf;
 }
 
 @font-face {
@@ -40,7 +44,7 @@
 
 body {
   font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
-  background-color: rgba(23, 27, 39, 0.95);
+  background-color: var(--black-main);
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -50,11 +54,20 @@ body {
 
 /* GLOBAL */
 p {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.25px;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+a {
+  cursor: pointer;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1,
@@ -142,42 +155,91 @@ nav .nav-item-link {
   height: 0;
 }
 
+/* ABOUT PAGE */
+
+.about p {
+  font-size: 1rem;
+}
+
 /* PROJECTS PAGE */
 
 /* Project item */
 .project-item {
-  cursor: pointer;
+  position: relative;
   outline: 2px solid #171b27;
   background-color: rgba(23, 27, 39, 0.5);
-  margin: 0.35em 0;
-  padding: 0.15rem;
-  height: 30px;
-  transition: 0.15s;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0;
+  transition: ease-in-out;
 }
 
 .project-item:hover {
   background-color: rgba(23, 27, 38, 0.75);
 }
 
-.project-item-container {
-  position: relative;
-  display: flex;
+.project-item-header {
+  cursor: pointer;
+}
+
+.project-item .project-name {
+  font-weight: 500;
 }
 
 .project-item .expand-btn {
   transition: 0.15s;
   position: absolute;
+  display: flex;
+  top: -0;
   right: 0;
   width: 32px;
   height: 32px;
-  transform: rotate(-45deg);
-  filter: invert(12%) sepia(62%) saturate(853%) hue-rotate(190deg) brightness(90%) contrast(86%);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.project-item:hover .expand-btn {
+.project-item.minified .expand-btn {
+  transform: rotate(-45deg);
+}
+
+.project-item.expanded .expand-btn {
+  transform: rotate(135deg);
+  top: calc(100% - 32px);
+  bottom: 0;
+}
+
+.project-item.minified:hover .expand-btn {
   transform: rotate(-45deg) scale(1.25);
-  right: -5px;
-  bottom: -5px;
+}
+
+.project-item.expanded:hover .expand-btn {
+  transform: rotate(135deg) scale(1.25);
+}
+
+.project-item-content {
+  transition: 0.15s;
+  opacity: 0.8;
+}
+
+.project-item-content.hidden {
+  opacity: 0;
+}
+
+.project-item-content.visible {
+  margin: 0.25rem 0;
+  opacity: 1;
+}
+
+.project-item.expanded .project-description {
+  margin: 0.4rem 0;
+}
+
+.project-item-content .project-links {
+  margin: 0.25rem 0;
+}
+
+.project-links a:first-child {
+  margin-right: 0.5rem;
 }
 
 /* FOOTER */
