@@ -10,8 +10,8 @@ const Skills = () => {
           Taidot
         </h1>
         <p className="skills-section-text section-text" lang="fi">
-          En tykkää arvostella taitoja prosenttien mukaan, koska ohjelmoinnissa aina oppii jotain
-          uutta, mutta jotta saatte nopean käsityksen, että mitä osaan niin tässä ois.
+          En tykkää arvostella taitoja prosenttien mukaan, mutta jotta saatte nopean käsityksen,
+          että mitä osaan niin tässä ois.
         </p>
         <div className="skills-list-section frontend">
           <div className="skills-section">
