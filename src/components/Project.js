@@ -37,8 +37,8 @@ const Project = ({ name, description, link, code }) => {
       >
         <p className="project-description">{description}</p>
         <p className="project-links">
-          {!link ? null : <a href={link || "#"}>Link</a>}
-          <a href={code || "#"}>Code</a>
+          {!link ? null : <a href={link}>Link</a>}
+          {!code ? null : <a href={code}>Code</a>}
         </p>
       </div>
       <img className="expand-btn" alt="" src={Expand} />
