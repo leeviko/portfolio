@@ -158,11 +158,19 @@ nav .nav-item-link {
   margin: 1rem 0;
 }
 
+.back-link {
+  font-size: 0.9rem;
+}
+
 /* HOME PAGE */
 
 /* ABOUT PAGE */
 
 /* SKILLS PAGE */
+
+.skills-list-section:last-of-type {
+  margin-bottom: 1rem;
+}
 
 .skills-list {
   display: flex;
@@ -199,6 +207,10 @@ nav .nav-item-link {
 }
 
 /* PROJECTS PAGE */
+
+.projects-list {
+  margin-bottom: 1rem;
+}
 
 /* Project item */
 .project-item {
@@ -258,10 +270,12 @@ nav .nav-item-link {
 }
 
 .project-item-content.hidden {
+  visibility: hidden;
   opacity: 0;
 }
 
 .project-item-content.visible {
+  visibility: visible;
   margin: 0.25rem 0;
   opacity: 1;
 }

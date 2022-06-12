@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Project from "./Project";
 
 const Projects = () => {
@@ -30,6 +32,9 @@ const Projects = () => {
               code="https://github.com/leeviko/e-kirjasto"
             />
           </div>
+          <Link to="/" className="back-link" lang="fi">
+            {"<"} Takaisin aloitukseen
+          </Link>
         </div>
       </div>
     </div>
