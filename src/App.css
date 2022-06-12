@@ -207,7 +207,6 @@ nav .nav-item-link {
   background-color: rgba(23, 27, 39, 0.5);
   padding: 0.25rem 0.5rem;
   margin: 0.5rem 0;
-  transition: ease-in-out;
 }
 
 .project-item:hover {

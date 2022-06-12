@@ -12,14 +12,13 @@ const Project = ({ name, description, link, code }) => {
   };
 
   const handleMouseDown = (e) => {
-    console.log(e);
     if (e.detail > 1) {
       e.preventDefault();
     }
   };
 
   useEffect(() => {
-    if (descRef.current && descRef.current.clientHeight !== 0 && expand) {
+    if (descRef.current && descRef.current.clientHeight >= 42 && expand) {
       setHeight(descRef.current.clientHeight);
     }
   }, [descRef, expand]);
