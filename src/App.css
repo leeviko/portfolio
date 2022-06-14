@@ -362,12 +362,15 @@ nav .nav-item-link {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
+  .page {
+    height: 100%;
+  }
   .footer {
-    color: #f0f9ff;
-    color: var(--white);
-    height: 125px;
-    background-color: var(--black-main);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 1rem 0 0 0;
   }
   .footer-container {
     height: 100%;
