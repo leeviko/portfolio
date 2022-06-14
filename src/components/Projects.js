@@ -31,6 +31,11 @@ const Projects = () => {
               description="E-kirjastossa käyttäjä voi lainata, etsiä ja palauttaa kirjoja. Admin voi lisätä ja päivittää kirjoja yms."
               code="https://github.com/leeviko/e-kirjasto"
             />
+            <Project
+              name="E-Kirjasto"
+              description="E-kirjastossa käyttäjä voi lainata, etsiä ja palauttaa kirjoja. Admin voi lisätä ja päivittää kirjoja yms."
+              code="https://github.com/leeviko/e-kirjasto"
+            />
           </div>
           <Link to="/" className="back-link" lang="fi">
             {"<"} Takaisin aloitukseen

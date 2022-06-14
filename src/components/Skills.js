@@ -33,8 +33,8 @@ const Skills = () => {
                 <Skill progress="90%" name="Node.js" />
                 <Skill progress="90%" name="Express" />
                 <Skill progress="95%" name="MySQL" />
-                <Skill progress="95%" name="PostgreSQL" />
-                <Skill progress="85%" name="PHP" />
+                <Skill progress="80%" name="PostgreSQL" />
+                <Skill progress="70%" name="PHP" />
               </div>
             </div>
           </div>

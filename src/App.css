@@ -87,6 +87,7 @@ h6,
 /* CONTAINER */
 .container {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -294,16 +295,24 @@ nav .nav-item-link {
 
 /* FOOTER */
 .footer {
-  position: fixed;
-  width: 100%;
+  position: absolute;
   bottom: 0;
   left: 0;
-  margin: 1.5rem 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--black-main);
 }
 
 .footer-container {
   display: flex;
   justify-content: center;
+}
+
+.footer-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .some-buttons {
@@ -334,4 +343,40 @@ nav .nav-item-link {
 
 .some-btn:hover img {
   opacity: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    margin: 1rem;
+    width: 90%;
+  }
+  body {
+    display: flex;
+    align-items: unset;
+  }
+
+  nav .nav-item-link {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    color: #f0f9ff;
+    color: var(--white);
+    height: 125px;
+    background-color: var(--black-main);
+  }
+  .footer-container {
+    height: 100%;
+    width: 100%;
+  }
+  .footer-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
