@@ -357,6 +357,9 @@ nav .nav-item-link {
     align-items: unset;
   }
 
+  nav {
+    margin: 1rem 0 0 0;
+  }
   nav .nav-item-link {
     margin: 1rem;
   }
@@ -381,5 +384,15 @@ nav .nav-item-link {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-item {
+    margin: 0.75rem 0;
+    padding: 0.5rem;
+  }
+  .section-text {
+    margin-bottom: 2rem;
   }
 }
