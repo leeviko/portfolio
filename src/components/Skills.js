@@ -11,10 +11,7 @@ const Skills = () => {
           Taidot
         </h1>
         <p className="skills-section-text section-text" lang="fi">
-          Tässä on jotain kieliä ja muita joita osaan ainakin jonkun verran. Prosentit olen
-          heittämällä keksinyt, joten ne saattaa olla hieman epätarkkoja. Tai ei ne muutenkaan ole
-          kovin hyviä mittaamaan osaamista mutta jotta saatte nopean käsityksen, että mitä osaan
-          niin lisäsin ne
+          Tässä on jotain kieliä ja muita työkaluja joita osaan.
         </p>
         <div className="page-content">
           <div className="skills-list-section frontend">
