@@ -410,6 +410,10 @@ nav .nav-item-link {
     padding: 0.5rem;
   }
 
+  .tag {
+    margin-top: 0.2rem;
+  }
+
   .section-text {
     margin-bottom: 2rem;
   }

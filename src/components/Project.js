@@ -6,7 +6,7 @@ import Expand from "../assets/images/expand.svg";
 
 const Project = ({ name, description, link, code, tags }) => {
   const [expand, setExpand] = useState(false);
-  const [height, setHeight] = useState(null);
+  const [itemHeight, setItemHeight] = useState(null);
   const descRef = useRef(null);
 
   const handleClick = () => {
@@ -21,7 +21,7 @@ const Project = ({ name, description, link, code, tags }) => {
 
   useEffect(() => {
     if (descRef.current && descRef.current.clientHeight >= 42 && expand) {
-      setHeight(descRef.current.clientHeight);
+      setItemHeight(descRef.current.clientHeight);
     }
   }, [descRef, expand]);
 
@@ -35,7 +35,7 @@ const Project = ({ name, description, link, code, tags }) => {
       <div
         ref={descRef}
         className={`project-item-content ${expand ? "visible" : "hidden"}`}
-        style={expand ? { height } : { height: "0px" }}
+        style={expand ? { height: itemHeight } : { height: "0px" }}
       >
         <ul className="project-tags">
           {tags.split(",").map((item) => (
