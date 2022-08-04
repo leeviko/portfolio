@@ -73,6 +73,10 @@ a:hover {
   text-decoration: underline;
 }
 
+li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -281,6 +285,19 @@ nav .nav-item-link {
   opacity: 1;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  line-height: 1;
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: var(--blue);
+}
+
 .project-item.expanded .project-description {
   margin: 0.4rem 0;
 }
@@ -392,6 +409,7 @@ nav .nav-item-link {
     margin: 0.75rem 0;
     padding: 0.5rem;
   }
+
   .section-text {
     margin-bottom: 2rem;
   }
