@@ -12,14 +12,14 @@ const Footer = () => {
           <div className="footer-wrapper">
             <div className="some-buttons">
               <a href="https://github.com/leeviko" className="github some-btn" draggable={false}>
-                <img className="icon-img" alt="" src={GithubIcon} draggable={false} />
+                <img className="icon-img" alt="Github" src={GithubIcon} draggable={false} />
               </a>
               <a
                 href="https://www.linkedin.com/in/leevi-kotilainen/"
                 className="linkedin some-btn"
                 draggable={false}
               >
-                <img className="icon-img" alt="" src={LinkedinIcon} draggable={false} />
+                <img className="icon-img" alt="Linkedin" src={LinkedinIcon} draggable={false} />
               </a>
               <a
                 href="mailto:leevikotilaine@gmail.com"
@@ -28,7 +28,7 @@ const Footer = () => {
                 className="mail some-btn"
                 draggable={false}
               >
-                <img className="icon-img" alt="" src={MailIcon} draggable={false} />
+                <img className="icon-img" alt="Mail" src={MailIcon} draggable={false} />
               </a>
             </div>
             <p className="cc">© 2022 Leevi Kotilainen</p>
