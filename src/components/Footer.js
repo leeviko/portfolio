@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-wrapper">
             <div className="some-buttons">
-              <a href="https://github.com/leeviko" className="some-btn" draggable={false}>
+              <a href="https://github.com/leeviko" className="github some-btn" draggable={false}>
                 <img className="icon-img" alt="" src={GithubIcon} draggable={false} />
               </a>
               <a
                 href="https://www.linkedin.com/in/leevi-kotilainen/"
-                className="some-btn"
+                className="linkedin some-btn"
                 draggable={false}
               >
                 <img className="icon-img" alt="" src={LinkedinIcon} draggable={false} />
@@ -25,7 +25,7 @@ const Footer = () => {
                 href="mailto:leevikotilaine@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="some-btn"
+                className="mail some-btn"
                 draggable={false}
               >
                 <img className="icon-img" alt="" src={MailIcon} draggable={false} />
