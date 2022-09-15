@@ -1,8 +1,7 @@
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 import "./App.css";
 import Nav from "./components/Nav";
-import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -16,10 +15,11 @@ const AppRoutes = () => {
       <div className="wrapper">
         <Nav currentPage={currentPage.pathname} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<Navigate to="" replace={true} />} />
         </Routes>
         <Footer />
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Skill from "./Skill";
 
@@ -44,15 +43,13 @@ const Skills = () => {
                 Muut
               </h3>
               <div className="skills-list">
-                <Skill progress="95%" name="Git" />
-                <Skill progress="95%" name="Linux" />
+                <Skill progress="90%" name="Git" />
+                <Skill progress="90%" name="Linux" />
+                <Skill progress="70%" name="Docker" />
                 <Skill progress="60%" name="Python" />
               </div>
             </div>
           </div>
-          <Link to="/" className="back-link" lang="fi">
-            {"<"} Takaisin aloitukseen
-          </Link>
         </div>
       </div>
     </div>

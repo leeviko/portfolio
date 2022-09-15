@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Project from "./Project";
 
@@ -35,9 +34,6 @@ const Projects = () => {
               tags="PHP"
             />
           </div>
-          <Link to="/" className="back-link" lang="fi">
-            {"<"} Takaisin aloitukseen
-          </Link>
         </div>
       </div>
     </div>

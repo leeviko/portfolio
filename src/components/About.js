@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -13,11 +12,6 @@ const About = () => {
           Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita. Vapaa-aikana tykkään
           koodata, pelata ja käydä juoksemassa, sekä välillä myös lukea.
         </p>
-        <div className="page-content">
-          <Link to="/" className="back-link" lang="fi">
-            {"<"} Takaisin aloitukseen
-          </Link>
-        </div>
       </div>
     </div>
   );
