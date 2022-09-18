@@ -1,11 +1,13 @@
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "react-router-dom";
 
-import "./App.css";
 import Nav from "./components/Nav";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import "./App.css";
+
+const About = React.lazy(() => import("./components/About"));
+const Skills = React.lazy(() => import("./components/Skills"));
+const Projects = React.lazy(() => import("./components/Projects"));
 
 const AppRoutes = () => {
   const currentPage = useLocation();
@@ -14,13 +16,14 @@ const AppRoutes = () => {
     <div className="container">
       <div className="wrapper">
         <Nav currentPage={currentPage.pathname} />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="*" element={<Navigate to="" replace={true} />} />
-        </Routes>
+        <Suspense>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<Navigate to="" replace={true} />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </div>
     </div>
