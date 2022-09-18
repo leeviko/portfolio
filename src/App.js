@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from "r
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Placeholder from "./components/Placeholder";
 import "./App.css";
 
 const About = React.lazy(() => import("./components/About"));
@@ -16,7 +17,7 @@ const AppRoutes = () => {
     <div className="container">
       <div className="wrapper">
         <Nav currentPage={currentPage.pathname} />
-        <Suspense>
+        <Suspense fallback={<Placeholder />}>
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/skills" element={<Skills />} />
