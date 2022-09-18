@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   useEffect(() => {
@@ -16,6 +17,9 @@ const About = () => {
           Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita. Vapaa-aikana tykkään
           koodata, pelata ja käydä juoksemassa, sekä välillä myös lukea.
         </p>
+        <Link className="resume-link" to="/CV_LeeviKotilainen.pdf" target="_blank">
+          CV
+        </Link>
       </div>
     </div>
   );

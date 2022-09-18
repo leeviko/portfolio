@@ -10,6 +10,8 @@
   --black-main: #222632;
 
   --blue: #335acf;
+  --blue-light: #4c6bc8;
+  --blue-light-hover: #3d5fc3;
 
   --light-green: #0e551e;
 }
@@ -168,6 +170,27 @@ nav .nav-item-link {
 /* HOME PAGE */
 
 /* ABOUT PAGE */
+
+.resume-link {
+  transition: 0.15s;
+  display: block;
+  text-align: center;
+  background-color: var(--blue-light);
+  color: var(--white);
+  border-radius: 0.2rem;
+  padding: 0.25rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  width: 60px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.resume-link:hover {
+  background-color: var(--blue-light-hover);
+  color: var(--white);
+  text-decoration: none;
+}
 
 /* SKILLS PAGE */
 
