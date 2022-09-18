@@ -10,8 +10,8 @@
   --black-main: #222632;
 
   --blue: #335acf;
-  --blue-light: #4c6bc8;
-  --blue-light-hover: #3d5fc3;
+  --blue-light: #4464c5;
+  --blue-light-hover: #3a56aa;
 
   --light-green: #0e551e;
 }
@@ -182,7 +182,7 @@ nav .nav-item-link {
   font-family: "Poppins";
   font-weight: 400;
   width: 60px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
 }
 
