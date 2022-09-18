@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Leevi - Minusta";
+  }, []);
+
   return (
     <div className="about page">
       <div className="page-container">

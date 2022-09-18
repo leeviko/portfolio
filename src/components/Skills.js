@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Skill from "./Skill";
 
 const Skills = () => {
+  useEffect(() => {
+    document.title = "Leevi - Taidot";
+  }, []);
+
   return (
     <div className="skills page">
       <div className="page-container">

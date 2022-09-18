@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Project from "./Project";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "Leevi - Projektit";
+  }, []);
+
   return (
     <div className="projects page">
       <div className="page-container">
