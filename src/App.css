@@ -134,7 +134,8 @@ nav .nav-item-link {
 }
 
 .nav-item.not-hover .line {
-  height: 0;
+  height: 4px;
+  background: none;
 }
 
 .nav-item.hover .line,
@@ -156,7 +157,6 @@ nav .nav-item-link {
   margin: 0 0 0 0.5rem;
   font-size: 1.5rem;
   font-weight: 400;
-  font-style: italic;
 }
 
 .section-text {

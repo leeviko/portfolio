@@ -14,6 +14,7 @@ const NavLink = ({ text, to, active }) => {
         {text}
       </Link>
       <div className="line"></div>
+      <div className="inactive-line"></div>
     </div>
   );
 };
