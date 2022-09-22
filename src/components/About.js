@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const About = () => {
-  useEffect(() => {
-    document.title = "Leevi - Minusta";
-  }, []);
-
   return (
     <div className="about page">
       <div className="page-container">
