@@ -18,7 +18,7 @@ const About = () => {
           kehittyä ohjelmoijana ja oppia uusia asioita. Harrastuksiini kuuluu mm. lukeminen,
           juokseminen, videopelaaminen ja koodaus.
         </p>
-        <Link className="resume-link" to="/CV_LeeviKotilainen.pdf" target="_blank">
+        <Link className="resume-link" to="/CV_LeeviKotilainen.pdf" target="_blank" download>
           CV
         </Link>
       </div>
