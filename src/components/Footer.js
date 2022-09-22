@@ -22,7 +22,7 @@ const Footer = () => {
                 <img className="icon-img" alt="Linkedin" src={LinkedinIcon} draggable={false} />
               </a>
               <a
-                href="mailto:leevikotilaine@gmail.com"
+                href="mailto:leevi.j.kotilainen@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 className="mail some-btn"
