@@ -1,2 +1,5 @@
 User-agent: *
+Disallow: /files/
+
+User-agent: *
 Allow: /
