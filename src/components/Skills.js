@@ -32,9 +32,9 @@ const Skills = () => {
             <div className="skills-section">
               <h3 className="skills-section-title">Backend</h3>
               <div className="skills-list">
-                <Skill progress="90%" name="Node.js" />
-                <Skill progress="90%" name="Express" />
-                <Skill progress="95%" name="MySQL" />
+                <Skill progress="95%" name="Node.js" />
+                <Skill progress="95%" name="Express" />
+                <Skill progress="90%" name="MySQL" />
                 <Skill progress="80%" name="PostgreSQL" />
                 <Skill progress="70%" name="PHP" />
               </div>
@@ -50,7 +50,9 @@ const Skills = () => {
                 <Skill progress="90%" name="Git" />
                 <Skill progress="90%" name="Linux" />
                 <Skill progress="70%" name="Docker" />
+                <Skill progress="70%" name="Nginx" />
                 <Skill progress="60%" name="Python" />
+                <Skill progress="40%" name="C++" />
               </div>
             </div>
           </div>
