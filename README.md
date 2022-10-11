@@ -1,5 +1,3 @@
-## Portfolio v2
+> My website.
 
-> My personal website.
-
-I plan to make this simpler than my old portfolio
+Link: https://leevi.dev
