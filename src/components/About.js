@@ -19,7 +19,7 @@ const About = () => {
           koodaus.
         </p>
         <Link className="resume-link" to="/files/CV_LeeviKotilainen.pdf" target="_blank" download>
-          CV
+          Lataa CV
         </Link>
       </div>
     </div>
