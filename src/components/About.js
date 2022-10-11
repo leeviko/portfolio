@@ -13,10 +13,10 @@ const About = () => {
           Minusta
         </h1>
         <p className="about-section-text section-text" lang="fi">
-          Moikka, oon Leevi Kotilainen. Opiskelen OSAO:n Kaukovainion yksikössä
-          ohjelmistokehittäjäksi. Tykkään suunnitella ja luoda nettisivuja. Tavoitteenani on
-          kehittyä ohjelmoijana ja oppia uusia asioita. Harrastuksiini kuuluu mm. lukeminen,
-          juokseminen, videopelaaminen ja koodaus.
+          Moro, oon Leevi Kotilainen. Opiskelen Kaukovainion OSAO:ssa ohjelmistokehittäjäksi.
+          Tykkään suunnitella ja luoda nettisivuja. Tavoitteenani on kehittyä ohjelmoijana ja oppia
+          uusia asioita. Harrastuksiini kuuluu mm. lukeminen, juokseminen, videopelaaminen ja
+          koodaus.
         </p>
         <Link className="resume-link" to="/files/CV_LeeviKotilainen.pdf" target="_blank" download>
           CV
