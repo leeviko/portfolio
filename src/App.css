@@ -41,7 +41,7 @@
 }
 
 body {
-  font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+  font-family: "Source Code Pro", monospace;
   background-color: var(--black-main);
   color: var(--white);
   display: flex;
@@ -53,7 +53,7 @@ body {
 /* GLOBAL */
 p,
 span {
-  font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
@@ -80,7 +80,7 @@ h4,
 h5,
 h6,
 .heading {
-  font-family: "Poppins";
+  font-family: "Poppins", "Franklin Gothic Medium", sans-serif;
   font-weight: normal;
 }
 
@@ -115,7 +115,8 @@ nav .nav-item-link {
   margin: 1rem 2.5rem;
   font-size: 1.2rem;
   text-decoration: none;
-  font-family: "Nunito";
+  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   color: var(--white);
 }
 
@@ -176,7 +177,7 @@ nav .nav-item-link {
   color: var(--white);
   border-radius: 0.2rem;
   padding: 0.25rem;
-  font-family: "Poppins";
+  font-family: "Poppins", "Franklin Gothic Medium", sans-serif;
   font-weight: 400;
   width: 95px;
   color: rgba(255, 255, 255, 0.9);
@@ -254,10 +255,6 @@ nav .nav-item-link {
   cursor: pointer;
 }
 
-.project-item .project-name {
-  font-weight: 500;
-}
-
 .project-item .expand-btn {
   transition: 0.15s;
   position: absolute;
@@ -315,7 +312,7 @@ nav .nav-item-link {
   padding: 0.25rem;
   margin-right: 0.5rem;
   border-radius: 0.2rem;
-  background-color: var(--blue);
+  background-color: var(--accent);
 }
 
 .project-item.expanded .project-description {
