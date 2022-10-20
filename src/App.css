@@ -14,6 +14,10 @@
   --blue-light-hover: #3a56aa;
 
   --light-green: #0e551e;
+
+  --accent: #4f4a87;
+  --accent-muted: #33394b;
+  --accent-dark: #353160;
 }
 
 @font-face {
@@ -26,6 +30,12 @@
 @font-face {
   font-family: "Source Code Pro";
   src: url("./assets/fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-display: fallback;
 }
@@ -105,29 +115,32 @@ nav .nav-item-link {
   margin: 1rem 2.5rem;
   font-size: 1.2rem;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: "Nunito";
   color: var(--white);
 }
 
 /* Nav link line animation */
 .nav-item .line {
-  width: 75%;
+  width: 40px;
   border-radius: 5px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   transition: 0.2s;
+  height: 0.35rem;
 }
 
 .nav-item.not-hover .line {
-  height: 4px;
-  background: none;
+  background-color: var(--accent-muted);
 }
 
 .nav-item.hover .line,
 .nav-item.active .line {
-  height: 4px;
-  background-color: var(--white);
+  background-color: var(--accent);
+}
+
+.nav-item.hover .line {
+  width: 50px;
 }
 
 /* PAGES */
@@ -139,10 +152,7 @@ nav .nav-item-link {
 }
 
 .page-heading {
-  letter-spacing: 1px;
-  margin: 0 0 0 0.5rem;
   font-size: 1.5rem;
-  font-weight: 400;
 }
 
 .section-text {
@@ -161,7 +171,8 @@ nav .nav-item-link {
   transition: 0.15s;
   display: block;
   text-align: center;
-  background-color: var(--blue-light);
+  background-color: var(--accent);
+  border: 2px solid var(--accent-dark);
   color: var(--white);
   border-radius: 0.2rem;
   padding: 0.25rem;
@@ -174,6 +185,8 @@ nav .nav-item-link {
 
 .resume-link:hover {
   background-color: var(--blue-light-hover);
+  background-color: var(--accent-dark);
+  border: 2px solid var(--accent-dark);
   color: var(--white);
   text-decoration: none;
 }

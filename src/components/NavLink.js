@@ -6,11 +6,14 @@ const NavLink = ({ text, to, active }) => {
 
   return (
     <div
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
       className={`nav-item ${isHover ? "hover" : "not-hover"} ${active ? "active" : "inactive"}`}
     >
-      <Link className="nav-item-link" to={to}>
+      <Link
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+        className="nav-item-link"
+        to={to}
+      >
         {text}
       </Link>
       <div className="line"></div>
