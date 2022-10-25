@@ -186,7 +186,6 @@ nav .nav-item-link {
 }
 
 .resume-link:hover {
-  background-color: var(--blue-light-hover);
   background-color: var(--accent-hover);
   border: 2px solid var(--accent-hover);
   color: var(--white);
@@ -207,6 +206,8 @@ nav .nav-item-link {
 .skills-section-title {
   font-size: 1.2rem;
   margin-top: 1rem;
+  opacity: 0.9;
+  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
 }
 
 /* Skill item */
@@ -218,13 +219,13 @@ nav .nav-item-link {
 /* Progress bar */
 .progress-bar {
   width: 100%;
-  border-radius: 3px;
+  border-radius: 0.1rem;
 
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .progress-bar .progress {
-  border-radius: 3px;
+  border-radius: 0.1rem;
 
   height: 5px;
   position: relative;
@@ -254,6 +255,12 @@ nav .nav-item-link {
 
 .project-item-header {
   cursor: pointer;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
 }
 
 .project-item .expand-btn {
