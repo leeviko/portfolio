@@ -1,9 +1,13 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Leevi Kotilainen</title>
+      </Head>
       <h1 className="page-heading" lang="fi">
         Minusta
       </h1>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Skill from "../components/Skill";
 
 import styles from "../styles/Skills.module.css";
@@ -5,6 +6,9 @@ import styles from "../styles/Skills.module.css";
 export default function Skills() {
   return (
     <>
+      <Head>
+        <title>Leevi - Taidot</title>
+      </Head>
       <h1 className="page-heading" lang="fi">
         Taidot
       </h1>

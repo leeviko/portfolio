@@ -1,10 +1,14 @@
 import styles from "../styles/Projects.module.css";
 
 import Project from "../components/Project";
+import Head from "next/head";
 
 export default function Projects() {
   return (
     <>
+      <Head>
+        <title>Leevi - Projektit</title>
+      </Head>
       <h1 className="page-heading" lang="fi">
         Projektit
       </h1>
