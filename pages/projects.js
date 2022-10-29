@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import Link from "next/link";
 
 import Project from "../components/Project";
 

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Skill from "../components/Skill";
 
 import styles from "../styles/Skills.module.css";
