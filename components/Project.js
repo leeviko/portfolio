@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import Image from "next/image";
 import Tag from "./Tag";
 
-import Expand from "../assets/images/expand.svg";
+import styles from "../styles/Projects.module.css";
 
-const Project = ({ name, description, link, code, tags }) => {
+export default function Project({ name, description, link, code, tags }) {
   const [expand, setExpand] = useState(false);
   const [itemHeight, setItemHeight] = useState(null);
   const descRef = useRef(null);
@@ -26,31 +26,45 @@ const Project = ({ name, description, link, code, tags }) => {
   }, [descRef, expand]);
 
   return (
-    <div className={`project-item ${expand ? "expanded" : "minified"}`}>
-      <div className="project-item-header">
-        <h4 className="project-name" onMouseDown={handleMouseDown} onClick={handleClick}>
+    <div
+      className={`${styles.projectItem} ${
+        expand ? styles.expanded : styles.minified
+      }`}
+    >
+      <div className={styles.projectItemHeader}>
+        <h4
+          className={styles.projectName}
+          onMouseDown={handleMouseDown}
+          onClick={handleClick}
+        >
           {name}
         </h4>
       </div>
       <div
         ref={descRef}
-        className={`project-item-content ${expand ? "visible" : "hidden"}`}
+        className={`${styles.projectItemContent} ${
+          expand ? styles.visible : styles.hidden
+        }`}
         style={expand ? { height: itemHeight } : { height: "0px" }}
       >
-        <ul className="project-tags">
+        <ul className={styles.projectTags}>
           {tags.split(",").map((item) => (
             <Tag key={item} name={item} />
           ))}
         </ul>
-        <p className="project-description">{description}</p>
-        <p className="project-links">
+        <p className={styles.projectDescription}>{description}</p>
+        <p className={styles.projectLinks}>
           {!link ? null : <a href={link}>Link</a>}
           {!code ? null : <a href={code}>Code</a>}
         </p>
       </div>
-      <img className="expand-btn" alt="" src={Expand} />
+      <Image
+        className={styles.expandBtn}
+        alt=""
+        src="/images/expand.svg"
+        width={32}
+        height={32}
+      />
     </div>
   );
-};
-
-export default Project;
+}

@@ -1,0 +1,53 @@
+/* Nav */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .navItems {
+  display: flex;
+}
+
+/* Nav item */
+.navbar .navItemLink {
+  text-align: center;
+  margin: 1rem 2.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: var(--white);
+}
+
+/* Nav link line animation */
+.navItem .line {
+  width: 40px;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.2s;
+  height: 0.35rem;
+}
+
+.navItem.notHover .line {
+  background-color: var(--accent-muted);
+}
+
+.navItem.hover .line,
+.navItem.active .line {
+  background-color: var(--accent);
+}
+
+.navItem.hover .line {
+  width: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    margin: 1rem 0 0 0;
+  }
+  .navbar .navItemLink {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+
+  --black-main: #222632;
+
+  --blue: #335acf;
+  --blue-light: #4464c5;
+  --blue-light-hover: #3a56aa;
+
+  --light-green: #0e551e;
+
+  --accent: #4f4a87;
+  --accent-muted: #33394b;
+  --accent-dark: #353160;
+  --accent-hover: #474279;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: var(--black-main);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p,
+span {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+a {
+  cursor: pointer;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: "Poppins", "Franklin Gothic Medium", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pages */
+
+.page {
+  width: 100%;
+  height: 300px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.page-heading {
+  font-size: 1.5rem;
+}
+
+.section-text {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    margin: 1rem;
+    width: 90%;
+  }
+  body {
+    display: flex;
+    align-items: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    height: 100%;
+  }
+}

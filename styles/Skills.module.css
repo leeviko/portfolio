@@ -1,0 +1,39 @@
+.skillsListSection:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillsSectionTitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans";
+}
+
+.skill {
+  margin: 0rem 1rem 0.5rem 0;
+  width: 7rem;
+}
+
+/* Progress bar */
+.progressBar {
+  width: 100%;
+  border-radius: 0.1rem;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.progressBar .progress {
+  border-radius: 0.1rem;
+
+  height: 5px;
+  position: relative;
+}
+.progress.green {
+  background-color: var(--light-green);
+}
