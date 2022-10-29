@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: "Source Code Pro", monospace;
+  font-family: var(--sourceCodePro);
   background-color: var(--black-main);
   color: var(--white);
   display: flex;
@@ -33,7 +33,7 @@ body {
 
 p,
 span {
-  font-family: "Source Code Pro", monospace;
+  font-family: var(--sourceCodePro);
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
@@ -60,7 +60,7 @@ h4,
 h5,
 h6,
 .heading {
-  font-family: "Poppins", "Franklin Gothic Medium", sans-serif;
+  font-family: var(--poppins);
   font-weight: normal;
 }
 

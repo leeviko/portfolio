@@ -7,7 +7,7 @@
   color: var(--white);
   border-radius: 0.2rem;
   padding: 0.25rem;
-  font-family: "Poppins", "Franklin Gothic Medium", sans-serif;
+  font-family: var(--poppins);
   font-weight: 400;
   width: 95px;
   color: rgba(255, 255, 255, 0.9);

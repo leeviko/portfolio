@@ -11,8 +11,7 @@
   font-size: 1.2rem;
   margin-top: 1rem;
   opacity: 0.9;
-  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans";
+  font-family: var(--nunito);
 }
 
 .skill {
