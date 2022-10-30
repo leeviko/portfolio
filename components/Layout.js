@@ -7,17 +7,20 @@ const nunito = Nunito({
   subsets: ["latin"],
   variable: "--nunito",
   fallback: ["Trebuchet MS"],
+  display: "block",
 });
 const poppins = Poppins({
   weight: "400",
   subsets: ["latin"],
   variable: "--poppins",
   fallback: ["Franklin Gothic Medium"],
+  display: "block",
 });
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
   variable: "--sourceCodePro",
   fallback: ["Courier New"],
+  display: "block",
 });
 
 export default function Layout({ children }) {
