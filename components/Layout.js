@@ -3,15 +3,21 @@ import Footer from "./Footer";
 
 import { Nunito, Poppins, Source_Code_Pro } from "@next/font/google";
 
-const nunito = Nunito({ subsets: ["latin"], variable: "--nunito" });
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--nunito",
+  fallback: ["Trebuchet MS"],
+});
 const poppins = Poppins({
   weight: "400",
   subsets: ["latin"],
   variable: "--poppins",
+  fallback: ["Franklin Gothic Medium"],
 });
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
   variable: "--sourceCodePro",
+  fallback: ["Courier New"],
 });
 
 export default function Layout({ children }) {
