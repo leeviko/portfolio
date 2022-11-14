@@ -20,10 +20,10 @@ export default function Skills() {
           <div className={styles.skillsSection}>
             <h3 className={styles.skillsSectionTitle}>Frontend</h3>
             <div className={styles.skillsList}>
-              <Skill progress="95%" name="HTML" />
-              <Skill progress="95%" name="CSS" />
-              <Skill progress="90%" name="React" />
-              <Skill progress="90%" name="Redux" />
+              <Skill name="HTML" />
+              <Skill name="CSS" />
+              <Skill name="React" />
+              <Skill name="Redux" />
             </div>
           </div>
         </div>
@@ -31,11 +31,11 @@ export default function Skills() {
           <div className={styles.skillsSection}>
             <h3 className={styles.skillsSectionTitle}>Backend</h3>
             <div className={styles.skillsList}>
-              <Skill progress="95%" name="Node.js" />
-              <Skill progress="95%" name="Express" />
-              <Skill progress="90%" name="MySQL" />
-              <Skill progress="80%" name="PostgreSQL" />
-              <Skill progress="70%" name="PHP" />
+              <Skill name="Node.js" />
+              <Skill name="Express" />
+              <Skill name="MySQL" />
+              <Skill name="PostgreSQL" />
+              <Skill name="PHP" />
             </div>
           </div>
         </div>
@@ -46,12 +46,12 @@ export default function Skills() {
               Muut
             </h3>
             <div className={styles.skillsList}>
-              <Skill progress="90%" name="Git" />
-              <Skill progress="90%" name="Linux" />
-              <Skill progress="70%" name="Docker" />
-              <Skill progress="70%" name="Nginx" />
-              <Skill progress="60%" name="Python" />
-              <Skill progress="40%" name="C++" />
+              <Skill name="Git" />
+              <Skill name="Linux" />
+              <Skill name="Docker" />
+              <Skill name="Nginx" />
+              <Skill name="Python" />
+              <Skill name="C++" />
             </div>
           </div>
         </div>
