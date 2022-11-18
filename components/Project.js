@@ -4,13 +4,25 @@ import Tag from "./Tag";
 
 import styles from "../styles/Projects.module.css";
 
-export default function Project({ name, description, link, code, tags }) {
+export default function Project({
+  name,
+  description,
+  link,
+  code,
+  tags,
+  handleExpand,
+  expandedItem,
+}) {
   const [expand, setExpand] = useState(false);
   const [itemHeight, setItemHeight] = useState(null);
   const descRef = useRef(null);
 
   const handleClick = () => {
-    setExpand(!expand);
+    if (expand === true) {
+      handleExpand(null);
+    } else {
+      handleExpand(name);
+    }
   };
 
   const handleMouseDown = (e) => {
@@ -24,6 +36,14 @@ export default function Project({ name, description, link, code, tags }) {
       setItemHeight(descRef.current.clientHeight);
     }
   }, [descRef, expand]);
+
+  useEffect(() => {
+    if (expandedItem === name) {
+      setExpand(true);
+    } else {
+      setExpand(false);
+    }
+  }, [expandedItem, name]);
 
   return (
     <div

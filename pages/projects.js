@@ -1,9 +1,17 @@
-import styles from "../styles/Projects.module.css";
-
-import Project from "../components/Project";
+import { useState } from "react";
 import Head from "next/head";
 
+import Project from "../components/Project";
+
+import styles from "../styles/Projects.module.css";
+
 export default function Projects() {
+  const [expandedItem, setExpandedItem] = useState(null);
+
+  const handleExpand = (item) => {
+    setExpandedItem(item);
+  };
+
   return (
     <>
       <Head>
@@ -23,12 +31,16 @@ export default function Projects() {
             link="https://blog.leevi.dev"
             code="https://github.com/leeviko/blog.leevi.dev"
             tags="React, Redux, Express, Rest API, PostgreSQL, Docker"
+            handleExpand={handleExpand}
+            expandedItem={expandedItem}
           />
           <Project
             name="Eveloper"
             description="Full stack Dev.to klooni"
             code="https://github.com/leeviko/eveloper"
             tags="React, Redux, Express, Rest API, PostgreSQL"
+            handleExpand={handleExpand}
+            expandedItem={expandedItem}
           />
           <Project
             name="Countries"
@@ -36,12 +48,16 @@ export default function Projects() {
             link="https://geronimo.okol.org/~kotlee/countries/"
             code="https://github.com/leeviko/countries"
             tags="React, Rest API"
+            handleExpand={handleExpand}
+            expandedItem={expandedItem}
           />
           <Project
             name="E-Kirjasto"
             description="E-kirjastossa käyttäjä voi lainata, etsiä ja palauttaa kirjoja. Admin voi lisätä ja päivittää kirjoja yms."
             code="https://github.com/leeviko/e-kirjasto"
             tags="PHP"
+            handleExpand={handleExpand}
+            expandedItem={expandedItem}
           />
         </div>
       </div>
