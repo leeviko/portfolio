@@ -18,6 +18,13 @@ export default function Projects() {
       <div className="page-content">
         <div className={styles.projectsList}>
           <Project
+            name="Blog"
+            description="Full stack blogi sivusto"
+            link="https://blog.leevi.dev"
+            code="https://github.com/leeviko/blog.leevi.dev"
+            tags="React, Redux, Express, Rest API, PostgreSQL, Docker"
+          />
+          <Project
             name="Eveloper"
             description="Full stack Dev.to klooni"
             code="https://github.com/leeviko/eveloper"
