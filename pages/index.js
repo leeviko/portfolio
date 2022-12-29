@@ -12,8 +12,7 @@ export default function Home() {
         Minusta
       </h1>
       <p className="section-text" lang="fi">
-        Moro, oon Leevi Kotilainen. Opiskelen Kaukovainion OSAO:ssa
-        ohjelmistokehittäjäksi. Tykkään suunnitella ja luoda nettisivuja.
+        Moro, oon Leevi Kotilainen. Tykkään suunnitella ja luoda nettisivuja.
         Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita.
         Harrastuksiini kuuluu mm. lukeminen, juokseminen, videopelaaminen ja
         koodaus.
