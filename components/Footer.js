@@ -54,7 +54,7 @@ export default function Footer() {
                 />
               </a>
             </div>
-            <p className="cc">© 2022 Leevi Kotilainen</p>
+            <p className="cc">© {new Date().getFullYear()} Leevi Kotilainen</p>
           </div>
         </div>
       </div>
