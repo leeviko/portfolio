@@ -27,7 +27,7 @@ export default function Projects() {
         <div className={styles.projectsList}>
           <Project
             name="Blog"
-            description="Full stack blogi sivusto"
+            description="Full stack blog sivusto, jossa on CI / CD pipeline."
             link="https://blog.leevi.dev"
             code="https://github.com/leeviko/blog.leevi.dev"
             tags="React, Redux, Express, Rest API, PostgreSQL, Docker"
