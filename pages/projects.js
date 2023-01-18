@@ -45,7 +45,7 @@ export default function Projects() {
           <Project
             name="Countries"
             description="Etsi tietoa eri maista"
-            link="https://geronimo.okol.org/~kotlee/countries/"
+            link="https://countries.leevi.dev"
             code="https://github.com/leeviko/countries"
             tags="React, Rest API"
             handleExpand={handleExpand}
