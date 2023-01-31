@@ -12,9 +12,6 @@ export default function Skills() {
       <h1 className="page-heading" lang="fi">
         Taidot
       </h1>
-      <p className="section-text" lang="fi">
-        Tässä on jotain kieliä ja muita työkaluja joita osaan.
-      </p>
       <div className="page-content">
         <div className={`${styles.skillsListSection} ${styles.frontend}`}>
           <div className={styles.skillsSection}>
@@ -24,6 +21,7 @@ export default function Skills() {
               <Skill name="CSS" />
               <Skill name="React" />
               <Skill name="Redux" />
+              <Skill name="Next.js" />
             </div>
           </div>
         </div>
@@ -36,6 +34,8 @@ export default function Skills() {
               <Skill name="MySQL" />
               <Skill name="PostgreSQL" />
               <Skill name="PHP" />
+              <Skill name="tRPC" />
+              <Skill name="Prisma ORM" />
             </div>
           </div>
         </div>

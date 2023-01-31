@@ -20,14 +20,19 @@ export default function Projects() {
       <h1 className="page-heading" lang="fi">
         Projektit
       </h1>
-      <p className="section-text" lang="fi">
-        Tässä on jotain projekteja mitä on tullut tehtyä.
-      </p>
       <div className="page-content">
         <div className={styles.projectsList}>
           <Project
+            name="Tietovisa (kesken)"
+            description="Sivusto, jossa käyttäjät voivat tehdä tietovisoja."
+            code="https://github.com/leeviko/quizitor"
+            tags="Next.js, tRPC, Prisma ORM"
+            handleExpand={handleExpand}
+            expandedItem={expandedItem}
+          />
+          <Project
             name="Blog"
-            description="Full stack blog sivusto, jossa on CI / CD pipeline."
+            description="Blog sivusto. Githubissa on myös CI / CD pipeline."
             link="https://blog.leevi.dev"
             code="https://github.com/leeviko/blog.leevi.dev"
             tags="React, Redux, Express, Rest API, PostgreSQL, Docker"

@@ -1,9 +1,9 @@
 .resumeLink {
+  margin-top: 1.25rem;
   transition: 0.15s;
   display: block;
   text-align: center;
   background-color: var(--accent);
-  border: 2px solid var(--accent-dark);
   color: var(--white);
   border-radius: 0.2rem;
   padding: 0.25rem;
@@ -16,7 +16,6 @@
 
 .resumeLink:hover {
   background-color: var(--accent-hover);
-  border: 2px solid var(--accent-hover);
   color: var(--white);
   text-decoration: none;
 }

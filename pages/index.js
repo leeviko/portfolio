@@ -12,11 +12,13 @@ export default function Home() {
         Minusta
       </h1>
       <p className="section-text" lang="fi">
-        Moro, oon Leevi Kotilainen. Tykkään suunnitella ja luoda nettisivuja.
-        Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita.
-        Harrastuksiini kuuluu mm. lukeminen, juokseminen, videopelaaminen ja
-        koodaus.
+        Moro! Oon Leevi Kotilainen, junior tason web-kehittäjä. Aloitin
+        ohjelmoinnin noin 4 vuotta sitten ja valmistuin datanomiksi vuoden 2022
+        lopussa. Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita.
+        Koodauksen lisäksi harrastan myös lukemista, juoksemista ja
+        videopelaamista.
       </p>
+      <p>Eniten kokemusta minulla on Reactissa, ja Node.js:ssä.</p>
       <Link
         className={styles.resumeLink}
         href="/files/CV_LeeviKotilainen.pdf"
