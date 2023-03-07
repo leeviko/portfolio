@@ -23,10 +23,11 @@ export default function Projects() {
       <div className="page-content">
         <div className={styles.projectsList}>
           <Project
-            name="Tietovisa (kesken)"
+            name="Tietovisa"
             description="Sivusto, jossa käyttäjät voivat tehdä tietovisoja."
             code="https://github.com/leeviko/quizitor"
-            tags="Next.js, tRPC, Prisma ORM"
+            link="https://quiz.leevi.dev/"
+            tags="Next.js, TypeScript, tRPC, Prisma ORM"
             handleExpand={handleExpand}
             expandedItem={expandedItem}
           />
