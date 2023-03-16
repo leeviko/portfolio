@@ -24,7 +24,7 @@ export default function Projects() {
         <div className={styles.projectsList}>
           <Project
             name="Tietovisa"
-            description="Sivusto, jossa käyttäjät voivat tehdä tietovisoja."
+            description="Sivusto, jossa käyttäjät voivat luoda ja pelata tietovisoja."
             code="https://github.com/leeviko/quizitor"
             link="https://quiz.leevi.dev/"
             tags="Next.js, TypeScript, tRPC, Prisma ORM"
@@ -34,7 +34,6 @@ export default function Projects() {
           <Project
             name="Blog"
             description="Blog sivusto. Githubissa on myös CI / CD pipeline."
-            link="https://blog.leevi.dev"
             code="https://github.com/leeviko/blog.leevi.dev"
             tags="React, Redux, Express, Rest API, PostgreSQL, Docker"
             handleExpand={handleExpand}
