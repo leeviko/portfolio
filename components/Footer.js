@@ -54,7 +54,7 @@ export default function Footer() {
                 />
               </a>
             </div>
-            <p className="cc">© {new Date().getFullYear()} Leevi Kotilainen</p>
+            <p>Leevi Kotilainen</p>
           </div>
         </div>
       </div>

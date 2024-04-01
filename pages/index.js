@@ -12,11 +12,10 @@ export default function Home() {
         Minusta
       </h1>
       <p className="section-text" lang="fi">
-        Moro! Oon Leevi Kotilainen, junior tason web-kehittäjä. Aloitin
-        ohjelmoinnin noin 4 vuotta sitten ja valmistuin datanomiksi vuoden 2022
-        lopussa. Tavoitteenani on kehittyä ohjelmoijana ja oppia uusia asioita.
-        Koodauksen lisäksi harrastan myös lukemista, juoksemista ja
-        videopelaamista.
+        Moro! Oon Leevi, junior tason web-kehittäjä Oulusta. Olen harrastanut
+        ohjelmointia vuodesta 2019 asti vaihtelevissa määrin. Keskityn pääosin
+        full stack web-ohjelmointiin, mutta minua kiinnostaa myös mm.
+        grafiikkaohjelmointi C++ ja OpenGL:ää käyttäen.
       </p>
       <p>Eniten kokemusta minulla on Reactissa, ja Node.js:ssä.</p>
       <Link
@@ -25,7 +24,7 @@ export default function Home() {
         target="_blank"
         download
       >
-        Lataa CV
+        CV
       </Link>
     </>
   );

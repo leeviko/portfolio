@@ -22,3 +22,12 @@
   border-radius: 0.2rem;
   background-color: var(--accent);
 }
+
+.skillName {
+  display: flex;
+  align-items: center;
+}
+
+.skillName img {
+  margin-right: 0.2rem;
+}
