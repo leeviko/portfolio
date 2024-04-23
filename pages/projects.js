@@ -1,16 +1,16 @@
-import { useState } from "react";
-import Head from "next/head";
+import { useState } from 'react';
+import Head from 'next/head';
 
-import Project from "../components/Project";
+import Project from '../components/Project';
 
-import styles from "../styles/Projects.module.css";
-import Image from "next/image";
+import styles from '../styles/Projects.module.css';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
     {
       title: 'Quizitor',
-      desc: 'Käyttäjät voivat luoda ja pelata tietovisoja.',
+      desc: 'Käyttäjät voivat luoda ja pelata tietovisoja sekä katsoa muiden käyttäjien tuloksia.',
       tags: ['Next.js', 'TypeScript', 'tRPC', 'Prisma ORM'],
       link: 'https://quiz.leevi.dev/',
       code: 'https://github.com/leeviko/quizitor',
@@ -35,10 +35,19 @@ export default function Projects() {
     },
     {
       title: 'Eveloper',
-      desc: 'Full stack Dev.to klooni',
+      desc: `Full stack Dev.to "klooni". Käyttäjä voi mm. luoda artikkeleja, 
+             kommentoida, seurata toista käyttäjää, tykätä postauksista ja 
+             kommenteista sekä etsiä artikkeleja ja käyttäjiä.`,
       tags: ['React', 'Redux', 'Express', 'Rest API', 'PostgreSQL'],
       link: '',
       code: 'https://github.com/leeviko/eveloper',
+    },
+    {
+      title: 'leevi.dev',
+      desc: 'Tämän sivuston koodi',
+      tags: ['Next.js'],
+      link: '',
+      code: 'https://github.com/leeviko/leevi.dev',
     },
     {
       title: 'Countries',
@@ -50,7 +59,7 @@ export default function Projects() {
     {
       title: 'E-Kirjasto',
       desc: 'E-kirjastossa käyttäjä voi lainata, etsiä ja palauttaa kirjoja. Admin voi lisätä, päivittää ja poistaa kirjoja.',
-      tags: ['PHP'],
+      tags: ['PHP', 'MySQL'],
       link: '',
       code: 'https://github.com/leeviko/e-kirjasto',
     },
