@@ -1,3 +1,7 @@
+.highlight {
+  background-color: var(--accent-025);
+}
+
 .resumeLink {
   margin-top: 1.25rem;
   transition: 0.15s;

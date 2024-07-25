@@ -7,7 +7,7 @@
 :root {
   --white: #ffffff;
 
-  --black-main: #222632;
+  --black-main: #0d0d0d;
   --dark: #1c202c;
 
   --blue: #335acf;
@@ -16,10 +16,11 @@
 
   --light-green: #0e551e;
 
-  --accent: #4f4a87;
+  --accent: #435372;
+  --accent-025: rgba(67, 83, 114, 0.25);
   --accent-muted: #33394b;
-  --accent-dark: #353160;
-  --accent-hover: #474279;
+  --accent-dark: #2d374d;
+  --accent-hover: #38445e;
 }
 
 body {
