@@ -20,7 +20,7 @@
   margin-top: 0.75rem;
   margin-right: 0.75rem;
   border-radius: 0.2rem;
-  background-color: var(--accent);
+  background-color: var(--accent-muted);
 }
 
 .skillName {

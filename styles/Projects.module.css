@@ -89,7 +89,7 @@
   padding: 0.25rem;
   margin: 0 0.5rem 0.5rem 0;
   border-radius: 0.2rem;
-  background-color: var(--accent);
+  background-color: var(--accent-muted);
 }
 
 .projectItemContent .projectLinks {
@@ -108,5 +108,12 @@
 
   .tag {
     margin-top: 0.2rem;
+  }
+}
+
+@media screen and (max-height: 675px) {
+  .projectsContainer {
+    height: auto;
+    margin-bottom: 86px;
   }
 }
