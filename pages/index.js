@@ -12,9 +12,13 @@ export default function Home() {
         Minusta
       </h1>
       <p className="section-text" lang="fi">
-        Moro! Oon Leevi, junior tason web-kehittäjä Oulusta. Olen harrastanut
-        ohjelmointia vuodesta 2019 asti vaihtelevissa määrin. Keskityn pääosin
-        full stack web-ohjelmointiin.
+        Moi! Olen Leevi, junior-tason web-kehittäjä Oulusta ja aloitan syksyllä
+        tietojenkäsittelytieteen opinnot Oulun yliopistossa.
+      </p>
+      <p className="section-text" lang="fi">
+        Ohjelmoinnin pariin päädyin vuonna 2019, ja siitä lähtien olen
+        jatkuvasti laajentanut taitojani sekä oppinut uusia teknologioita.
+        Erityisesti olen keskittynyt full stack web-kehitykseen.
       </p>
       <p>
         Eniten kokemusta minulla on{' '}

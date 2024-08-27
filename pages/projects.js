@@ -9,11 +9,31 @@ import Image from 'next/image';
 export default function Projects() {
   const projects = [
     {
+      title: 'Planit',
+      desc: `Tässä projektissa toteutin Trello-sovelluksen kloonin, 
+             jossa käyttäjät voivat luoda ja hallita tehtävätauluja, kortteja ja listoja. 
+             Projekti on rakennettu modernilla full stack -teknologialla, jossa frontend on toteutettu Reactilla ja backend Expressin avulla.
+             Projekti on hostattu VPS:ssä Dockerissa ja GitHubissa on CI / CD pipeline.`,
+      tags: [
+        'React',
+        'Redux',
+        'TypeScript',
+        'Express',
+        'PostgreSQL',
+        'Docker',
+        'Nginx',
+      ],
+      link: 'https://planit.leevi.dev/',
+      code: 'https://github.com/leeviko/planit',
+      featured: true,
+    },
+    {
       title: 'Quizitor',
       desc: 'Käyttäjät voivat luoda ja pelata tietovisoja sekä katsoa muiden käyttäjien tuloksia.',
       tags: ['Next.js', 'TypeScript', 'tRPC', 'Prisma ORM'],
       link: 'https://quiz.leevi.dev/',
       code: 'https://github.com/leeviko/quizitor',
+      featured: true,
     },
     {
       title: 'blog.leevi.dev',
@@ -25,20 +45,20 @@ export default function Projects() {
         'Redux',
         'TypeScript',
         'Express',
-        'Rest API',
         'PostgreSQL',
         'Docker',
         'Nginx',
       ],
       link: '',
       code: 'https://github.com/leeviko/blog.leevi.dev',
+      featured: true,
     },
     {
       title: 'Eveloper',
       desc: `Full stack Dev.to "klooni". Käyttäjä voi mm. luoda artikkeleja, 
              kommentoida, seurata toista käyttäjää, tykätä postauksista ja 
              kommenteista sekä etsiä artikkeleja ja käyttäjiä.`,
-      tags: ['React', 'Redux', 'Express', 'Rest API', 'PostgreSQL'],
+      tags: ['React', 'Redux', 'Express', 'PostgreSQL'],
       link: '',
       code: 'https://github.com/leeviko/eveloper',
     },
@@ -52,7 +72,7 @@ export default function Projects() {
     {
       title: 'Countries',
       desc: 'Etsi tietoa eri maista',
-      tags: ['React', 'Rest API'],
+      tags: ['React'],
       link: 'https://countries.leevi.dev/',
       code: 'https://github.com/leeviko/countries',
     },
@@ -70,7 +90,6 @@ export default function Projects() {
     'Redux',
     'Next.js',
     'TypeScript',
-    'Rest API',
     'Express',
     'PostgreSQL',
     'Docker',
@@ -130,6 +149,7 @@ export default function Projects() {
                   code={item.code}
                   link={item.link}
                   tags={item.tags}
+                  featured={item.featured ?? false}
                 />
               )
           )}

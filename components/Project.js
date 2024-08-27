@@ -1,11 +1,20 @@
-import React from "react";
-import Tag from "./Tag";
+import React from 'react';
+import Tag from './Tag';
 
-import styles from "../styles/Projects.module.css";
+import styles from '../styles/Projects.module.css';
 
-export default function Project({ name, description, link, code, tags }) {
+export default function Project({
+  name,
+  description,
+  link,
+  code,
+  tags,
+  featured,
+}) {
   return (
-    <div className={styles.projectItem}>
+    <div
+      className={`${styles.projectItem} ${featured && styles.projectFeatured}`}
+    >
       <div className={styles.projectItemHeader}>
         <h4 className={styles.projectName}>{name}</h4>
       </div>
