@@ -12,8 +12,8 @@ export default function Home() {
         Minusta
       </h1>
       <p className="section-text" lang="fi">
-        Moi! Olen Leevi, junior-tason web-kehittäjä Oulusta ja aloitan syksyllä
-        tietojenkäsittelytieteen opinnot Oulun yliopistossa.
+        Moi! Olen Leevi, junior-tason web-kehittäjä Oulusta. Aloitin
+        tietojenkäsittelytieteiden opinnot Oulun yliopistossa syksyllä 2024.
       </p>
       <p className="section-text" lang="fi">
         Ohjelmoinnin pariin päädyin vuonna 2019, ja siitä lähtien olen
